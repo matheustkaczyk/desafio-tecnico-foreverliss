@@ -7,8 +7,35 @@ $productFontColor: #345C7D;
 
 header {
   background-color: $mainColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  svg {
+    width: 12rem;
+    padding: 1.5%
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    
+    input {
+      width: 45em;
+      padding: 2%
+    }
+  }
 }
 
 navbar {
   background-color: $navbarColor;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    color: white;
+  }
 }

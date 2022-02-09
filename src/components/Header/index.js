@@ -5,7 +5,7 @@ import React from 'react';
 const Header = () => {
   return(
     <header>
-      <svg width="160" height="86" viewBox="0 0 160 86" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+      <svg viewBox="0 0 160 86" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <rect width="160" height="85.5445" fill="url(#pattern0)"/>
         <defs>
         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -20,7 +20,7 @@ const Header = () => {
       <button type="submit">BUSCAR</button>
       </form>
 
-      <div>
+      <div className="buttons-div">
         <button>Minha conta</button>
         <button>Carrinho</button>
       </div>

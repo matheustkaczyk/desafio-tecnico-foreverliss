@@ -9,7 +9,7 @@ const Main = () => {
       <Header />
       <Navbar />
     </div>
-  )
+  ) 
 };
 
 export default Main;

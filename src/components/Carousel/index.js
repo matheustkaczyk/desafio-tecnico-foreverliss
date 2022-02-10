@@ -13,6 +13,8 @@ const Carousel = () => {
     slidesToScroll: 1
   };
 
+  // todo: imagens caroussel, mobile breakpoints, menu hamburguer, linkds onde deve ser links
+
   return (
     <div className="carousel">
       <Slider {...settings}>

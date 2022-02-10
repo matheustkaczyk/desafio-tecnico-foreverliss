@@ -11,7 +11,7 @@ const mockedProducts = [
 const Products = () => {
   return(
     <div className="products-session">
-      <h3>FOREVER BABY <span>DESTAQUES</span></h3>
+      <h2>FOREVER BABY <span>DESTAQUES</span></h2>
       <div className="products">
         { mockedProducts.map((product) => ProductCard(product)) }
       </div>

@@ -8,11 +8,10 @@ const ProductCard = (product) => {
   }
   
   return(
-    <div>
+    <div className="product-card">
       <img src={ product.img } />
-      <div>
         <h4>{ product.title }</h4>
-        <p>{ product.price }</p>
+        <p>R$ { product.price }</p>
         <ReactStars
           count={5}
           value={product.rating}
@@ -21,7 +20,6 @@ const ProductCard = (product) => {
           activeColor="#ffd700"
         />
         <button>Adicionar ao carrinho</button>
-      </div>
     </div>
   )
 };

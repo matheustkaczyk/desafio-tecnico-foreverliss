@@ -197,9 +197,11 @@ footer {
   .social {
     text-align: center;
 
-    img {
-      width: 15rem;
-      height: auto;
+    a {
+      img {
+        width: 5rem;
+        height: auto;
+      }
     }
   }
 

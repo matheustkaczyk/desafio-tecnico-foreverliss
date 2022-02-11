@@ -3,13 +3,11 @@ import axios from 'axios';
 
 const Newsletter = () => {
   const [input, setInput] = useState('');
-  const [sucess, setSuccess] = useState(false);
   const handleInput = ({ target }) => {
     setInput(target.value);
   };
 
   const handleSubmit = () => {
-    if (input !== '') {
       const URL = 'https://foreverliss1.websiteseguro.com/teste-dev/newsletter.php';
       const data = JSON.stringify({ "email": `${input}` });
       axios.post(URL, data, {
@@ -17,12 +15,11 @@ const Newsletter = () => {
         "Accept": "application/json",
       })
         .then((response) => {
-          setSuccess(true);
+          alert(response.data.Erro)
         })
-        .catch(() => setSuccess(false));
-    };
-
-    alert('É necessário informar um e-mail');
+        .catch((err) => {
+          alert(err.message);
+        });
     }
 
   return(

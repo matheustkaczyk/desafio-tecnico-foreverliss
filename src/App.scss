@@ -11,6 +11,11 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100vw;
+
+  .hamburguer {
+    display: none;
+  }
 
   svg {
     width: 12rem;
@@ -33,7 +38,6 @@ header {
       color: $productFontColor;
       font-weight: bolder;
     }
-
   }
 
   .buttons-div {
@@ -41,7 +45,7 @@ header {
 
     svg {
       padding: 0;
-      width: 5em;
+      width: 3em;
     }
   }
 }
@@ -244,5 +248,42 @@ footer {
     text-align: center;
     max-width: 30%;
     color: #AAAAAA;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    justify-content: space-around;
+
+    .hamburguer {
+      display: unset;
+      width: 1em;
+      margin-right: 1%;
+    }
+
+    svg {
+      width: 5rem;
+    }
+
+    form {
+      input {
+        width: 15em;
+        font-size: 0.5em;
+      }
+      button {
+        font-size: 0.5em;
+      }
+    }
+
+    .buttons-div svg {
+      width: 2em;
+    }
+  }
+  nav {
+    display: none;
+  }
+
+  .carousel {
+    width: 100vw;
   }
 }

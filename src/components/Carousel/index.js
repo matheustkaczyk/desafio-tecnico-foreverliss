@@ -15,9 +15,16 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
-
-  // todo: imagens caroussel, mobile breakpoints, menu hamburguer, linkds onde deve ser links
 
   return (
     <div className="carousel">

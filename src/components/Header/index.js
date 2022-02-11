@@ -29,7 +29,7 @@ const Header = ({ hamburguer, setHamburguer }) => {
 
   return(
     <header>
-
+      
       <div className="hamburguer" onClick={ () => setHamburguer(!hamburguer) }>
         <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="27" height="5" fill="white"/>
@@ -39,7 +39,7 @@ const Header = ({ hamburguer, setHamburguer }) => {
       </div>
 
       <a href="/">
-        <svg viewBox="0 0 160 86" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg className="logo" viewBox="0 0 160 86" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <rect width="160" height="85.5445" fill="url(#pattern0)"/>
           <defs>
           <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

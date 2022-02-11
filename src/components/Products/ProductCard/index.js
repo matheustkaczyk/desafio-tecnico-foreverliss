@@ -26,7 +26,7 @@ const ProductCard = (product) => {
           value={product.rating}
           size={24}
           activeColor="#ffd700"
-          classNames="react-stars"
+          classNames="stars"
         />
         <button onClick={handleClick}>
           Adicionar ao carrinho

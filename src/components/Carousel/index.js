@@ -1,6 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
 
+import hero1 from '../../images/hero1.jpeg';
+import hero2 from '../../images/hero2.jpeg';
+
 
 const Carousel = () => {
 
@@ -10,18 +13,17 @@ const Carousel = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
   };
 
   // todo: imagens caroussel, mobile breakpoints, menu hamburguer, linkds onde deve ser links
 
   return (
     <div className="carousel">
-      <Slider {...settings}>
-        <p>item1</p>
-        <p>item2</p>
-        <p>item3</p>
-        <p>item4</p>
+      <Slider className="carousel-slider" {...settings}>
+        <img src={ hero1 } alt="hero image"  />
+        <img src={ hero2 } alt="hero image" />
       </Slider>
     </div>
   )

@@ -145,6 +145,11 @@ nav {
     color: white;
   }
 
+  button:hover {
+    transition: 0.5s;
+    background-color: rgb(95, 179, 0);
+  }
+
   .bought {
     color: green;
   }

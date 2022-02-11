@@ -33,6 +33,16 @@ header {
       color: $productFontColor;
       font-weight: bolder;
     }
+
+  }
+
+  .buttons-div {
+    display: flex;
+
+    svg {
+      padding: 0;
+      width: 5em;
+    }
   }
 }
 

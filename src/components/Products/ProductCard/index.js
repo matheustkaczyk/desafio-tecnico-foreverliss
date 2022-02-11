@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ReactStars from "react-rating-stars-component";
 
 const ProductCard = (product) => {

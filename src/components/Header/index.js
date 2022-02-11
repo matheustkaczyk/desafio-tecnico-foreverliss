@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Header = () => {
+const Header = ({ hamburguer, setHamburguer }) => {
   const [input, setInput] = useState('');
   const [valid, setValid] = useState(false);
 
@@ -16,10 +16,21 @@ const Header = () => {
     return valid ? null : alert('Não é permitido caracteres especiais');
   };
 
+  useEffect(() => {
+      const element = document.getElementsByClassName('hamburguer-navigation')[0];
+      
+      if (hamburguer) {
+        element.classList.add('hamburguer-open');
+        return false;
+      }
+
+      element.classList.remove('hamburguer-open');
+  }, [hamburguer])
+
   return(
     <header>
 
-      <div className="hamburguer">
+      <div className="hamburguer" onClick={ () => setHamburguer(!hamburguer) }>
         <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="27" height="5" fill="white"/>
           <rect y="8" width="27" height="5" fill="white"/>

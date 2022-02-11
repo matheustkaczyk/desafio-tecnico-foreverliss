@@ -2,14 +2,14 @@ import React from 'react';
 
 const Navbar = () => {
   return(
-    <navbar>
-      <a>PERFUME INFANTIL</a>
-      <a>SABONETES</a>
-      <a>PÓS-BANHO</a>
-      <a>ASSADURAS</a>
-      <a>HIDRATANTES</a>
-      <a>LENÇOS UMEDECIDOS</a>
-    </navbar>
+    <nav>
+      <a href="/">PERFUME INFANTIL</a>
+      <a href="/">SABONETES</a>
+      <a href="/">PÓS-BANHO</a>
+      <a href="/">ASSADURAS</a>
+      <a href="/">HIDRATANTES</a>
+      <a href="/">LENÇOS UMEDECIDOS</a>
+    </nav>
   )
 };
 

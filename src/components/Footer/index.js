@@ -11,7 +11,7 @@ const Footer = () => {
         <img src={ SocialMedia } alt="informações redes sociais" />
       </div>
 
-      <nav>
+      <nav className="footer-nav">
         <a>PERFUME INFANTIL</a>
         <a>SABONETES</a>
         <a>PÓS-BANHO</a>

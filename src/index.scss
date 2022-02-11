@@ -3,7 +3,11 @@ $mainColor: #F7B094;
 body {
   margin: 0;
   padding: 0;
-  max-width: 100vw;
+  width: 100vw;
   font-family: monospace;
   background-color: $mainColor;
+}
+
+a {
+  text-decoration: none;
 }
